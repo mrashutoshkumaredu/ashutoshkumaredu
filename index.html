@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashutosh Kumar | Academic & Research Portfolio</title>
+    
+    <!-- Favicon (Browser Tab Icon) -->
+    <link rel="icon" type="image/png" href="https://www.curaj.ac.in/sites/default/files/favicon.ico">
+
     <style>
         :root {
             --primary: #1e3a8a;
@@ -22,28 +26,33 @@
             padding: 0;
         }
 
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
             color: var(--text-main);
             background-color: var(--bg-light);
             line-height: 1.6;
         }
-        
+
         .hero-contact {
             margin-top: 1.2rem;
             font-size: 0.95rem;
         }
-        
+
         .hero-contact a {
             color: #93c5fd;
             text-decoration: none;
             margin: 0 0.5rem;
         }
-        
+
         .hero-contact a:hover {
             text-decoration: underline;
         }
-        
+
         header {
             position: sticky;
             top: 0;
@@ -150,6 +159,12 @@
             border-radius: 8px;
             padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
         .card h3 {
@@ -163,6 +178,15 @@
             color: var(--text-dark);
             font-size: 0.95rem;
             margin-bottom: 0.3rem;
+        }
+
+        .card .sub-title a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .card .sub-title a:hover {
+            text-decoration: underline;
         }
 
         .card .date {
@@ -225,10 +249,9 @@
             <p class="title">Senior Research Fellow (Ph.D. Scholar in Digital Society)</p>
             <p>Focusing on Electoral Integrity, AI, Data Analytics, and Digital Governance</p>
             <div class="badge">Qualified for JRF & Assistant Professor (Dec 2022 Cycle)</div>
-            <!-- Added Quick Contact Bar -->
             <div class="hero-contact">
-              <a href="mailto:2023PHDDS001@curaj.ac.in">📧 2023PHDDS001@curaj.ac.in</a> | 
-              <a href="tel:+917903799633">📞 +91-7903799633</a>
+                <a href="mailto:2023PHDDS001@curaj.ac.in">📧 2023PHDDS001@curaj.ac.in</a> | 
+                <a href="tel:+917903799633">📞 +91-7903799633</a>
             </div>
         </div>
     </div>
@@ -241,7 +264,9 @@
             <div class="grid-2">
                 <div class="card">
                     <h3>Ph.D. (Digital Society)</h3>
-                    <p class="sub-title">Central University of Rajasthan</p>
+                    <p class="sub-title">
+                        <a href="https://www.curaj.ac.in/" target="_blank" rel="noopener noreferrer">Central University of Rajasthan</a>
+                    </p>
                     <p class="date">Enrolled / Admitted: 2024</p>
                 </div>
                 <div class="card">
@@ -353,13 +378,19 @@
             <div class="grid-2" style="margin-bottom: 2rem;">
                 <div class="card">
                     <h3>Instructor</h3>
-                    <p class="sub-title">Department of Public Policy, Law and Governance, Central University of Rajasthan</p>
+                    <p class="sub-title">
+                        Department of Public Policy, Law and Governance, 
+                        <a href="https://www.curaj.ac.in/" target="_blank" rel="noopener noreferrer">Central University of Rajasthan</a>
+                    </p>
                     <p class="date">March 23 – May 07, 2026</p>
                     <p>Instructor for a 6-week workshop on <strong>"Introduction to Python for Public Policy, Law, and Governance"</strong>.</p>
                 </div>
                 <div class="card">
                     <h3>Resource Person</h3>
-                    <p class="sub-title">Department of Society-Technology Interface & Community Cell, CURAJ</p>
+                    <p class="sub-title">
+                        Department of Society-Technology Interface & Community Cell, 
+                        <a href="https://www.curaj.ac.in/" target="_blank" rel="noopener noreferrer">CURAJ</a>
+                    </p>
                     <p class="date">27/02/2026</p>
                     <p>Conducted a programme on Digital Literacy for students of 9th and 11th class at Government High School Choondari.</p>
                 </div>
@@ -428,38 +459,38 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card" style="text-align: center; padding: 2rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                    Feel free to reach out for academic collaborations, research inquiries, or speaking engagements.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 1rem;">
+                    <div>
+                        <strong>Institutional Email:</strong><br>
+                        <a href="mailto:2023PHDDS001@curaj.ac.in" style="color: var(--primary-light); text-decoration: none;">
+                            2023PHDDS001@curaj.ac.in
+                        </a>
+                    </div>
+                    <div>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+917903799633" style="color: var(--primary-light); text-decoration: none;">
+                            +91-7903799633
+                        </a>
+                    </div>
+                    <div>
+                        <strong>Affiliation:</strong><br>
+                        <a href="https://www.curaj.ac.in/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); text-decoration: none;">
+                            Central University of Rajasthan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="card" style="text-align: center; padding: 2rem;">
-        <p style="font-size: 1.1rem; margin-bottom: 1rem;">
-            Feel free to reach out for academic collaborations, research inquiries, or speaking engagements.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 1rem;">
-            <div>
-                <strong>Institutional Email:</strong><br>
-                <a href="mailto:2023PHDDS001@curaj.ac.in" style="color: var(--primary-light); text-decoration: none;">
-                    2023PHDDS001@curaj.ac.in
-                </a>
-            </div>
-            <div>
-                <strong>Phone:</strong><br>
-                <a href="tel:+917903799633" style="color: var(--primary-light); text-decoration: none;">
-                    +91-7903799633
-                </a>
-            </div>
-            <div>
-                <strong>Affiliation:</strong><br>
-                <a href="https://www.curaj.ac.in/" target="_blank" rel="noopener noreferrer"; style="color: var(--primary-light); text-decoration: none;>
-                    Central University of Rajasthan
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-  
     <footer>
         <p>&copy; 2026 Ashutosh Kumar | Central University of Rajasthan</p>
     </footer>
