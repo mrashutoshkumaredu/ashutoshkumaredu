@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Kumar | Academic & Research Portfolio</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #2563eb;
+            --accent: #0f172a;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p.title {
+            font-size: 1.25rem;
+            color: #93c5fd;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            margin-top: 0.8rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2.section-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            border-bottom: 3px solid var(--primary-light);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card .sub-title {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card .date {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.8rem;
+        }
+
+        ul.custom-list {
+            padding-left: 1.2rem;
+        }
+
+        ul.custom-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        footer {
+            background-color: var(--accent);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Ashutosh Kumar</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#conferences">Conferences</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ashutosh Kumar</h1>
+            <p class="title">Research Scholar in Digital Society</p>
+            <p>Electoral Politics, AI Governance, Data Analytics & Public Policy</p>
+            <div class="badge">Qualified for JRF & Assistant Professor (Dec 2022 Cycle)</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Education -->
+        <section id="about">
+            <h2 class="section-title">Education</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Ph.D. (Digital Society)</h3>
+                    <p class="sub-title">Central University of Rajasthan</p>
+                    <p class="date">Enrolled / Admitted: 2024</p>
+                </div>
+                <div class="card">
+                    <h3>M.A. Political Science</h3>
+                    <p class="sub-title">Pondicherry University</p>
+                    <p class="date">Year of Passing: 2023</p>
+                </div>
+                <div class="card">
+                    <h3>B.A. Hons. (Political Science)</h3>
+                    <p class="sub-title">Aligarh Muslim University</p>
+                    <p class="date">Year of Passing: 2021</p>
+                </div>
+                <div class="card">
+                    <h3>Intermediate (CBSE Board)</h3>
+                    <p class="sub-title">Sainik School Tilaiya</p>
+                    <p class="date">Year of Passing: 2017</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2 class="section-title">Publications (N=2)</h2>
+            <div class="card" style="margin-bottom: 1rem;">
+                <h3>Research Paper</h3>
+                <p><strong>"Digital Mobilisation and The AI Frontier: Assessing Voter Awareness and Perception of AI-Based Content in the 2025 Bihar Assembly Election"</strong></p>
+                <p class="date">Published in <em>Research Reinforcement Journal</em></p>
+            </div>
+            <div class="card">
+                <h3>Book Chapter</h3>
+                <p><strong>"Artificial Intelligence, Electoral Integrity, and Democratic Sustainability in India: Implications for SDG 16"</strong></p>
+                <p class="date">Status: Under Pre-Print</p>
+            </div>
+        </section>
+
+        <!-- Workshops -->
+        <section id="workshops">
+            <h2 class="section-title">Professional Training & Workshops (N=4)</h2>
+            <div class="card">
+                <ul class="custom-list">
+                    <li>
+                        <strong>Capacity Building Programme on "Enhancing Capacity in Data Analytics and Visualisation":</strong> 
+                        Organised by Department of Economics, School of Management, Pondicherry University (4th–8th August 2025).
+                    </li>
+                    <li>
+                        <strong>Workshop on "Academic Reading and Writing in the Social Sciences":</strong> 
+                        Organised by International Institute of Migration and Development (IIMAD) (25th, 27th, 30th June & 4th July 2025).
+                    </li>
+                    <li>
+                        <strong>Online Workshop on "Fundamental of Research Methodology using Application Software":</strong> 
+                        Offered by Department of Management Studies, NIT Durgapur (24th–28th June 2024).
+                    </li>
+                    <li>
+                        <strong>Workshop on "Research Methodology & Multivariate Data Analysis":</strong> 
+                        Organised by Department of Humanities and Social Sciences, IIT Tirupati (20th–24th May 2024).
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Conferences -->
+        <section id="conferences">
+            <h2 class="section-title">Conference & Seminar Presentations (N=9)</h2>
+            <div class="card">
+                <ul class="custom-list">
+                    <li>
+                        <strong>Gandhi Beyond Boundaries: Relevance of Gandhian Thought in a Global World (ICSSR Sponsored):</strong> 
+                        Organised by Dept. of Gandhian Thought and Peace Studies, Central University of Gujarat, Kundhela, Vadodara. Presented paper titled <em>"From Symbol to Substance: Students Perceptions of Gandhian Philosophy in Contemporary Society"</em> (March 24th–25th, 2026).
+                    </li>
+                    <li>
+                        <strong>Indian Democracy and Elections in the Digital Era:</strong> 
+                        Organised by Dept. of Political Science, Maulana Azad National Urdu University (MANUU), Hyderabad. Presented paper titled <em>"Digital Mobilisation and the AI Frontier: Assessing Voter Awareness and perception in the 2025 Bihar Assembly Election"</em> (March 24th–25th, 2026).
+                    </li>
+                    <li>
+                        <strong>Indian Democracy and Elections in the Digital Era:</strong> 
+                        Organised by Dept. of Political Science, MANUU, Hyderabad. Presented paper titled <em>"Analysing the relationship between Social Justice Movements and Mahadalits through Nancy Fraser's justice theory"</em> (March 24th–25th, 2026).
+                    </li>
+                    <li>
+                        <strong>Fostering Inclusivity: Wellness and Development for Women and Divyangjan:</strong> 
+                        Organised by Dayananda Sagar College of Arts, Science & Commerce, Bengaluru. Presented paper titled <em>"Bridging the Digital Divide: A Techno-Social Examination of Workplace Accessibility for People with Disabilities"</em> (21st March 2025).
+                    </li>
+                    <li>
+                        <strong>Political Consultancy in India: Opportunities & Challenges:</strong> 
+                        Attended National Conference organised by Dept. of Political Science, MANUU, Hyderabad & Billion Connect Pvt. Ltd. (February 24th–25th, 2025).
+                    </li>
+                    <li>
+                        <strong>61st All India Political Science Conference & International Seminar (IPSA):</strong> 
+                        Organised by Maharaja Ganga Singh University, Bikaner. Presented paper titled <em>"Assessing the Successes and Challenges of E-Governance and Citizen Engagement in Rajasthan"</em> (October 18th–19th, 2024).
+                    </li>
+                    <li>
+                        <strong>Commerce and Technology in 21st Century: Nurturing Sustainable Business (ICSSR, NWRC Sponsored):</strong> 
+                        Organised by Dept. of Commerce, Central University of Himachal Pradesh, Dharamshala. Presented paper titled <em>"The Impact of Deepfake Technology on the 2024 Indian General Election: Challenges and Implications"</em> (June 26th–27th, 2024).
+                    </li>
+                    <li>
+                        <strong>Commerce and Technology in 21st Century (ICSSR, NWRC Sponsored):</strong> 
+                        Organised by Dept. of Commerce, Central University of Himachal Pradesh, Dharamshala. Presented paper titled <em>"Impact of e-Ganna App on Sugarcane Farmers: A Study of Muzaffarnagar District"</em> (June 26th–27th, 2024).
+                    </li>
+                    <li>
+                        <strong>Exploring Media, Law & AI in Post-Truth Era: An Evolving Ecosystem:</strong> 
+                        Attended International Conference organised by School of Liberal Arts and Humanities and School of Law, Woxsen University (March 12th–13th, 2024).
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience">
+            <h2 class="section-title">Work & Resource Person Experience (N=2)</h2>
+            <div class="grid-2" style="margin-bottom: 2rem;">
+                <div class="card">
+                    <h3>Instructor</h3>
+                    <p class="sub-title">Department of Public Policy, Law and Governance, Central University of Rajasthan</p>
+                    <p class="date">March 23 – May 07, 2026</p>
+                    <p>Instructor for a 6-week workshop on <strong>"Introduction to Python for Public Policy, Law, and Governance"</strong>.</p>
+                </div>
+                <div class="card">
+                    <h3>Resource Person</h3>
+                    <p class="sub-title">Department of Society-Technology Interface & Community Cell, CURAJ</p>
+                    <p class="date">27/02/2026</p>
+                    <p>Conducted a programme on Digital Literacy for students of 9th and 11th class at Government High School Choondari.</p>
+                </div>
+            </div>
+
+            <!-- Volunteering -->
+            <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Volunteering Experience (N=4)</h3>
+            <div class="card" style="margin-bottom: 2rem;">
+                <ul class="custom-list">
+                    <li>
+                        <strong>National Summit for Institutional Leaders 2026:</strong> 
+                        Themed <em>"Inspiring Visionary Leaders, Shaping Institutions, Building a Vibrant Viksit Bharat"</em>, organised by Vidya Bharati Uchcha Shiksha Sansthan (VBUSS) (16–17 Feb 2026).
+                    </li>
+                    <li>
+                        <strong>Capacity Building Programme for Social Science Faculty Members (ICSSR Sponsored):</strong> 
+                        Managed technical and graphical components, Centre for Gandhian Thought and Peace Studies, Central University of Gujarat (Dec 11th–23rd, 2023).
+                    </li>
+                    <li>
+                        <strong>School For Democracy (SFD), Bhim, Rajasthan:</strong> 
+                        Participated in protest marches organised by SR Abhiyan and assisted in conducting workshops (June 30th–Sept 10th, 2023).
+                    </li>
+                    <li>
+                        <strong>Accessibility Support:</strong> Volunteered and supported students with special needs pursuing higher education.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Internship Experience -->
+            <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Internship Experience (N=4)</h3>
+            <div class="card">
+                <ul class="custom-list">
+                    <li>
+                        <strong>Social Work and Research Centre (SWRC) (March 2025):</strong> 
+                        Assisted in field-based evaluation of Community Radio initiatives, questionnaire design, door-to-door surveys, and evaluation report compilation.
+                    </li>
+                    <li>
+                        <strong>School For Democracy (SFD), Bhim, Rajasthan (21 Dec 2022 – 17 Jan 2023):</strong> 
+                        Interned conducting social audits and participating in MGNREGA-related activities.
+                    </li>
+                    <li>
+                        <strong>The Wings Of Desire NGO, Aligarh (09 Nov 2019 – 17 Nov 2020):</strong> Event Management Intern.
+                    </li>
+                    <li>
+                        <strong>The Wings Of Desire NGO, Aligarh (01 Oct 2021 – 01 March 2022):</strong> Technical Management Intern.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certificate Courses -->
+        <section id="certifications">
+            <h2 class="section-title">Certificate Courses (N=10)</h2>
+            <div class="card">
+                <ul class="custom-list">
+                    <li><strong>Integrated Training Program on Rapid Prototyping, Embedded Systems, and Automation:</strong> Indian Space Academy</li>
+                    <li><strong>Information Warfare:</strong> School of Internal Security, Defence and Strategic Studies, Rashtriya Raksha University, Gandhinagar (13–17 May 2025)</li>
+                    <li><strong>Basics of Data Analytics:</strong> Masai School</li>
+                    <li><strong>Raspberry Pi Essential Training (2020):</strong> Mark Niemann-Ross</li>
+                    <li><strong>Organizing Your Remote Office for Maximum Productivity:</strong> Paula Rizzo</li>
+                    <li><strong>Electronics Foundations: Fundamentals:</strong> Barron Stone</li>
+                    <li><strong>Computer Components and Peripherals for IT Technicians:</strong> Dan Gookin</li>
+                    <li><strong>Video Interview Production Techniques:</strong> Dave Pond</li>
+                    <li><strong>Creating Online Video with Android Phones:</strong> Nick Harauz</li>
+                    <li><strong>PowerPoint: Designing Better Slides:</strong> Heather Ackmann</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ashutosh Kumar | Central University of Rajasthan</p>
+    </footer>
+
+</body>
+</html>
