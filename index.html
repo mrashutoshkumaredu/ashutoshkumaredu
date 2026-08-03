@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashutosh Kumar | Academic & Research Portfolio</title>
     
-    <!-- Favicon (Browser Tab Icon) -->
-    <link rel="icon" type="image/png" href="https://www.curaj.ac.in/sites/default/files/favicon.ico">
-
+    <!-- Favicon (Browser Tab Icon) --
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <style>
         :root {
             --primary: #1e3a8a;
@@ -80,13 +84,14 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 1.5rem;
+            gap: 1.2rem;
         }
 
         nav a {
             text-decoration: none;
             color: var(--text-main);
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.2s;
         }
 
@@ -153,6 +158,12 @@
             gap: 1.5rem;
         }
 
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -195,6 +206,57 @@
             margin-bottom: 0.8rem;
         }
 
+        /* Tech Tags for Projects */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+        }
+
+        /* Social Media Section Styles */
+        .social-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+        }
+
+        .social-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .social-header h3 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+        }
+
+        .feed-container {
+            flex: 1;
+            overflow-y: auto;
+            max-height: 380px;
+            background: #f8fafc;
+            border-radius: 6px;
+            padding: 0.5rem;
+        }
+
         ul.custom-list {
             padding-left: 1.2rem;
         }
@@ -219,7 +281,7 @@
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 1rem;
+                gap: 0.8rem;
             }
         }
     </style>
@@ -232,11 +294,12 @@
             <nav>
                 <ul>
                     <li><a href="#about">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#workshops">Workshops</a></li>
                     <li><a href="#conferences">Conferences</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#social">Social</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -283,6 +346,35 @@
                     <h3>Intermediate (CBSE Board)</h3>
                     <p class="sub-title">Sainik School Tilaiya</p>
                     <p class="date">Year of Passing: 2017</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Smart Plant Watering System</h3>
+                    <p class="date">Embedded Automation & IoT Project</p>
+                    <p>Designed an automated, sensor-based plant irrigation system utilizing rapid prototyping to monitor soil moisture levels and optimize automated water distribution for sustainable water usage.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Embedded Systems</span>
+                        <span class="tag">Rapid Prototyping</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Sensors</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>UGC-NET Paper 1 Educational Platform</h3>
+                    <p class="date">Web Application & Learning Portal</p>
+                    <p>Developed a responsive educational web portal tailored for candidates preparing for the UGC-NET Paper 1 examination. Features structured learning material, mock tests, and intuitive navigation.</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">EdTech</span>
+                        <span class="tag">Web Design</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -456,6 +548,65 @@
                     <li><strong>Creating Online Video with Android Phones:</strong> Nick Harauz</li>
                     <li><strong>PowerPoint: Designing Better Slides:</strong> Heather Ackmann</li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- Social Media Feeds Section -->
+        <section id="social">
+            <h2 class="section-title">Social Media Feeds & Updates</h2>
+            <div class="grid-3">
+                
+                <!-- LinkedIn Container -->
+                <div class="social-card">
+                    <div class="social-header">
+                        <span style="font-size: 1.3rem;">💼</span>
+                        <h3>LinkedIn Feed</h3>
+                    </div>
+                    <div class="feed-container">
+                        <!-- To embed your live profile feed, paste an embed widget script from platforms like Elfsight, Juicer, or SociableKIT here -->
+                        <p style="font-size: 0.9rem; color: #64748b; text-align: center; margin-top: 2rem;">
+                            Connect on LinkedIn for research updates and academic networking.
+                        </p>
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); font-weight: 600; text-decoration: none;">
+                                View LinkedIn Profile →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Twitter / X Feed Container -->
+                <div class="social-card">
+                    <div class="social-header">
+                        <span style="font-size: 1.3rem;">🐦</span>
+                        <h3>Twitter / X Feed</h3>
+                    </div>
+                    <div class="feed-container">
+                        <!-- Standard Twitter Widget Embed -->
+                        <a class="twitter-timeline" data-height="360" href="https://twitter.com">Posts by Ashutosh Kumar</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+
+                <!-- Instagram Feed Container -->
+                <div class="social-card">
+                    <div class="social-header">
+                        <span style="font-size: 1.3rem;">📷</span>
+                        <h3>Instagram Feed</h3>
+                    </div>
+                    <div class="feed-container">
+                        <!-- To embed live Instagram posts, paste your embed widget iframe or script here -->
+                        <p style="font-size: 0.9rem; color: #64748b; text-align: center; margin-top: 2rem;">
+                            Follow on Instagram for updates on workshops, events, and academic life.
+                        </p>
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); font-weight: 600; text-decoration: none;">
+                                View Instagram Profile →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
